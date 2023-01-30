@@ -1,5 +1,4 @@
 import React from "react";
-import { isTemplateExpression } from "typescript";
 import { CONTAINER_PADDING } from "../../constants/index.js";
 
 const AdvertismentSection = (props) => {
