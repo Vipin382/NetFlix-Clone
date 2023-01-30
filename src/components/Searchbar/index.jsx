@@ -20,7 +20,7 @@ const SearchBar = () => {
   return (
     <>
       <div>
-        <h3 className="text-center text-xs sm:text-sm md:text-xl mb-2">
+        <h3 className="text-center text-xs sm:text-sm md:text-xl mb-2 text-white">
           Ready to watch? Enter your email to create or restart your membership
         </h3>
         <div className="flex flex-col items-center lg:items-start lg:flex-row gap-y-1">

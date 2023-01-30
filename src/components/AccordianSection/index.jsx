@@ -15,7 +15,9 @@ const AccordianSection = () => {
   return (
     <div className="py-[70px] px-[45px] transition-all duration-200  bg-black grid place-items-center">
       <div className="flex flex-col gap-10 min-w-[200px] max-w-[900px] w-full">
-        <h1 className="text-center text-xl sm:text-2xl smd:text-4xl lg:text-6xl">Frequently Asked Questions</h1>
+        <h1 className="text-center text-xl sm:text-2xl smd:text-4xl lg:text-6xl text-white">
+          Frequently Asked Questions
+        </h1>
         <Accordion allowToggle className="bg-black">
           {AccordianData.map((item, index) => {
             return (
@@ -28,14 +30,17 @@ const AccordianSection = () => {
                         _hover={{
                           background: "[#303030]",
                         }}
-                        padding={{md:"0.8em 1.2em 0.8em 1.2em" ,xl:"1.5em 2.2em 1.5em 1.2em",}}
-                        // sx={{ padding: "1.5em 2.2em 1.5em 1.2em" }} 
+                        padding={{
+                          md: "0.8em 1.2em 0.8em 1.2em",
+                          xl: "1.5em 2.2em 1.5em 1.2em",
+                        }}
+                        // sx={{ padding: "1.5em 2.2em 1.5em 1.2em" }}
                       >
                         <Box
                           as="span"
                           flex="1"
                           textAlign="left"
-                          className="lg:text-2xl"
+                          className="lg:text-2xl text-white"
                         >
                           {item.title}
                         </Box>
@@ -44,22 +49,22 @@ const AccordianSection = () => {
                             onClick={(e) => {
                               e.currentTarget.style.rotate = "45deg";
                             }}
-                            className="text-3xl transition-all duration-100"
+                            className="text-3xl transition-all duration-100  text-white"
                           />
                         ) : (
-                          <AiOutlinePlus className="text-3xl transition-all duration-100"/>
+                          <AiOutlinePlus className="text-3xl transition-all duration-100  text-white" />
                         )}
                       </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4} className="mt-0.5 bg-[#303030]">
                       <p className="lg:text-2xl">{item.content}</p>
                       {item.content2 ? (
-                        <p className="lg:text-2xl">
+                        <p className="lg:text-2xl  text-white">
                           <br />
                           {item.content2}
                         </p>
                       ) : (
-                        <p></p>
+                        <p className=" text-white"></p>
                       )}
                     </AccordionPanel>
                   </>
