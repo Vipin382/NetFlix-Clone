@@ -14,5 +14,4 @@ Tech used
 Live Demo : 
 
 
-
-https://netflix-clone-beta-fawn.vercel.app/
+https://netflix-clone-vipin382.vercel.app/
